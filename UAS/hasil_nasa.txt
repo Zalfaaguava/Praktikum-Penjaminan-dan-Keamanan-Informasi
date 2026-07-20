@@ -1,0 +1,10 @@
+# Nmap 7.99 scan initiated Mon Jul 20 09:50:05 2026 as: nmap -F -oN hasil_nasa.txt www.nasa.gov
+Nmap scan report for www.nasa.gov (192.0.66.108)
+Host is up (0.075s latency).
+Other addresses for www.nasa.gov (not scanned): 2a04:fa87:fffd::c000:426c
+Not shown: 98 filtered tcp ports (no-response)
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+# Nmap done at Mon Jul 20 09:50:11 2026 -- 1 IP address (1 host up) scanned in 7.03 seconds

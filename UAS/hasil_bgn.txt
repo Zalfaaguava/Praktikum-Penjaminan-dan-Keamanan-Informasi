@@ -1,0 +1,32 @@
+# Nmap 7.99 scan initiated Mon Jul 20 09:47:55 2026 as: nmap -F -oN hasil_bgn.txt www.bgn.go.id
+Nmap scan report for www.bgn.go.id (110.239.78.90)
+Host is up (0.069s latency).
+Other addresses for www.bgn.go.id (not scanned): 110.239.78.83 64:ff9b::6eef:4e53 64:ff9b::6eef:4e5a
+rDNS record for 110.239.78.90: ecs-110-239-78-90.compute.hwclouds-dns.com
+Not shown: 77 closed tcp ports (reset)
+PORT      STATE    SERVICE
+9/tcp     filtered discard
+80/tcp    open     http
+81/tcp    open     hosts2-ns
+88/tcp    open     kerberos-sec
+144/tcp   open     news
+443/tcp   open     https
+587/tcp   open     submission
+995/tcp   open     pop3s
+3000/tcp  open     ppp
+3128/tcp  open     squid-http
+5000/tcp  open     upnp
+6001/tcp  open     X11:1
+7070/tcp  open     realserver
+8000/tcp  open     http-alt
+8008/tcp  open     http
+8009/tcp  open     ajp13
+8080/tcp  open     http-proxy
+8081/tcp  open     blackice-icecap
+8443/tcp  open     https-alt
+8888/tcp  open     sun-answerbook
+9100/tcp  open     jetdirect
+9999/tcp  open     abyss
+10000/tcp open     snet-sensor-mgmt
+
+# Nmap done at Mon Jul 20 09:48:07 2026 -- 1 IP address (1 host up) scanned in 11.98 seconds
