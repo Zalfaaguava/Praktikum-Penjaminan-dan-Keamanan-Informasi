@@ -1,0 +1,255 @@
+# Nmap 7.99 scan initiated Mon Jul 20 09:53:36 2026 as: nmap -sV -O -p 9,80,81,88,144,443,587,995,3000,3128,5000,6001,7070,8000,8008,8009,8080,8081,8443,8888 -oN bgn_version.txt www.bgn.go.id
+Nmap scan report for www.bgn.go.id (110.239.78.83)
+Host is up (0.059s latency).
+Other addresses for www.bgn.go.id (not scanned): 110.239.78.90 64:ff9b::6eef:4e53 64:ff9b::6eef:4e5a
+rDNS record for 110.239.78.83: ecs-110-239-78-83.compute.hwclouds-dns.com
+
+PORT     STATE    SERVICE         VERSION
+9/tcp    closed   discard
+80/tcp   open     http            CW
+81/tcp   open     hosts2-ns?
+88/tcp   open     kerberos-sec?
+144/tcp  open     news?
+443/tcp  open     ssl/https       CW
+587/tcp  open     submission?
+995/tcp  open     ssl/pop3s?
+3000/tcp open     ppp?
+3128/tcp open     squid-http?
+5000/tcp open     tcpwrapped
+6001/tcp open     X11:1?
+7070/tcp open     realserver?
+8000/tcp filtered http-alt
+8008/tcp open     http            CW
+8009/tcp open     ajp13?
+8080/tcp open     http-proxy      CW
+8081/tcp open     tcpwrapped
+8443/tcp open     ssl/https-alt   CW
+8888/tcp open     sun-answerbook?
+9 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port80-TCP:V=7.99%I=7%D=7/20%Time=6A5D8DBD%P=i686-pc-windows-windows%r(
+SF:GetRequest,925,"HTTP/1\.1\x20404\x20Not\x20Found\r\nDate:\x20Mon,\x2020
+SF:\x20Jul\x202026\x2002:53:33\x20GMT\r\nContent-Type:\x20text/html\r\nCon
+SF:tent-Length:\x202178\r\nConnection:\x20close\r\nETag:\x20\"67925993-882
+SF:\"\r\nServer:\x20CW\r\n\r\n<!DOCTYPE\x20html><html\x20style=\"height:10
+SF:0%;width:100%\"><head><meta\x20http-equiv=\"Content-Type\"\x20content=\
+SF:"text/html;\x20charset=utf-8\"\x20/><meta\x20http-equiv=\"Server\"\x20c
+SF:ontent=\"CloudWAF\"\x20/><title\x20id=\"title\">\xe6\x9c\xaa\xe6\x89\xb
+SF:e\xe5\x88\xb0</title></head><body\x20style=\"height:100%;width:100%;mar
+SF:gin:0px;font-family:Microsoft\x20yahei\"><div><style\x20type=\"text/css
+SF:\">\t\.button{float:right;margin-right:2rem;text-decoration:none;backgr
+SF:ound:white;color:#e94d4c;padding:\x205px\x2015px\x205px\x2015px;font-si
+SF:ze:1rem;font-family:\x20\xe5\xbe\xae\xe8\xbd\xaf\xe9\x9b\x85\xe9\xbb\x9
+SF:1,\xe5\xae\x8b\xe4\xbd\x93,Arial,Helvetica,Verdana,sans-serif;font-weig
+SF:ht:bold;border-radius:0rem;border:\x20none;-webkit-transition:all\x20li
+SF:near\x200\.30s;-moz-transition:all\x20linear\x200\.30s;}\.button:hover{
+SF:text-decoration:none;background:#e94d4c;color:#f2f2f2;}</style><input\x
+SF:20type=\"button\"")%r(HTTPOptions,925,"HTTP/1\.1\x20404\x20Not\x20Found
+SF:\r\nDate:\x20Mon,\x2020\x20Jul\x202026\x2002:53:33\x20GMT\r\nContent-Ty
+SF:pe:\x20text/html\r\nContent-Length:\x202178\r\nConnection:\x20close\r\n
+SF:ETag:\x20\"679257af-882\"\r\nServer:\x20CW\r\n\r\n<!DOCTYPE\x20html><ht
+SF:ml\x20style=\"height:100%;width:100%\"><head><meta\x20http-equiv=\"Cont
+SF:ent-Type\"\x20content=\"text/html;\x20charset=utf-8\"\x20/><meta\x20htt
+SF:p-equiv=\"Server\"\x20content=\"CloudWAF\"\x20/><title\x20id=\"title\">
+SF:\xe6\x9c\xaa\xe6\x89\xbe\xe5\x88\xb0</title></head><body\x20style=\"hei
+SF:ght:100%;width:100%;margin:0px;font-family:Microsoft\x20yahei\"><div><s
+SF:tyle\x20type=\"text/css\">\t\.button{float:right;margin-right:2rem;text
+SF:-decoration:none;background:white;color:#e94d4c;padding:\x205px\x2015px
+SF:\x205px\x2015px;font-size:1rem;font-family:\x20\xe5\xbe\xae\xe8\xbd\xaf
+SF:\xe9\x9b\x85\xe9\xbb\x91,\xe5\xae\x8b\xe4\xbd\x93,Arial,Helvetica,Verda
+SF:na,sans-serif;font-weight:bold;border-radius:0rem;border:\x20none;-webk
+SF:it-transition:all\x20linear\x200\.30s;-moz-transition:all\x20linear\x20
+SF:0\.30s;}\.button:hover{text-decoration:none;background:#e94d4c;color:#f
+SF:2f2f2;}</style><input\x20type=\"button\"");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port81-TCP:V=7.99%I=7%D=7/20%Time=6A5D8DBD%P=i686-pc-windows-windows%r(
+SF:GetRequest,925,"HTTP/1\.1\x20404\x20Not\x20Found\r\nDate:\x20Mon,\x2020
+SF:\x20Jul\x202026\x2002:53:33\x20GMT\r\nContent-Type:\x20text/html\r\nCon
+SF:tent-Length:\x202178\r\nConnection:\x20close\r\nETag:\x20\"67925993-882
+SF:\"\r\nServer:\x20CW\r\n\r\n<!DOCTYPE\x20html><html\x20style=\"height:10
+SF:0%;width:100%\"><head><meta\x20http-equiv=\"Content-Type\"\x20content=\
+SF:"text/html;\x20charset=utf-8\"\x20/><meta\x20http-equiv=\"Server\"\x20c
+SF:ontent=\"CloudWAF\"\x20/><title\x20id=\"title\">\xe6\x9c\xaa\xe6\x89\xb
+SF:e\xe5\x88\xb0</title></head><body\x20style=\"height:100%;width:100%;mar
+SF:gin:0px;font-family:Microsoft\x20yahei\"><div><style\x20type=\"text/css
+SF:\">\t\.button{float:right;margin-right:2rem;text-decoration:none;backgr
+SF:ound:white;color:#e94d4c;padding:\x205px\x2015px\x205px\x2015px;font-si
+SF:ze:1rem;font-family:\x20\xe5\xbe\xae\xe8\xbd\xaf\xe9\x9b\x85\xe9\xbb\x9
+SF:1,\xe5\xae\x8b\xe4\xbd\x93,Arial,Helvetica,Verdana,sans-serif;font-weig
+SF:ht:bold;border-radius:0rem;border:\x20none;-webkit-transition:all\x20li
+SF:near\x200\.30s;-moz-transition:all\x20linear\x200\.30s;}\.button:hover{
+SF:text-decoration:none;background:#e94d4c;color:#f2f2f2;}</style><input\x
+SF:20type=\"button\"")%r(HTTPOptions,925,"HTTP/1\.1\x20404\x20Not\x20Found
+SF:\r\nDate:\x20Mon,\x2020\x20Jul\x202026\x2002:53:33\x20GMT\r\nContent-Ty
+SF:pe:\x20text/html\r\nContent-Length:\x202178\r\nConnection:\x20close\r\n
+SF:ETag:\x20\"679257af-882\"\r\nServer:\x20CW\r\n\r\n<!DOCTYPE\x20html><ht
+SF:ml\x20style=\"height:100%;width:100%\"><head><meta\x20http-equiv=\"Cont
+SF:ent-Type\"\x20content=\"text/html;\x20charset=utf-8\"\x20/><meta\x20htt
+SF:p-equiv=\"Server\"\x20content=\"CloudWAF\"\x20/><title\x20id=\"title\">
+SF:\xe6\x9c\xaa\xe6\x89\xbe\xe5\x88\xb0</title></head><body\x20style=\"hei
+SF:ght:100%;width:100%;margin:0px;font-family:Microsoft\x20yahei\"><div><s
+SF:tyle\x20type=\"text/css\">\t\.button{float:right;margin-right:2rem;text
+SF:-decoration:none;background:white;color:#e94d4c;padding:\x205px\x2015px
+SF:\x205px\x2015px;font-size:1rem;font-family:\x20\xe5\xbe\xae\xe8\xbd\xaf
+SF:\xe9\x9b\x85\xe9\xbb\x91,\xe5\xae\x8b\xe4\xbd\x93,Arial,Helvetica,Verda
+SF:na,sans-serif;font-weight:bold;border-radius:0rem;border:\x20none;-webk
+SF:it-transition:all\x20linear\x200\.30s;-moz-transition:all\x20linear\x20
+SF:0\.30s;}\.button:hover{text-decoration:none;background:#e94d4c;color:#f
+SF:2f2f2;}</style><input\x20type=\"button\"");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port88-TCP:V=7.99%I=7%D=7/20%Time=6A5D8DBD%P=i686-pc-windows-windows%r(
+SF:GetRequest,925,"HTTP/1\.1\x20404\x20Not\x20Found\r\nDate:\x20Mon,\x2020
+SF:\x20Jul\x202026\x2002:53:33\x20GMT\r\nContent-Type:\x20text/html\r\nCon
+SF:tent-Length:\x202178\r\nConnection:\x20close\r\nETag:\x20\"679257af-882
+SF:\"\r\nServer:\x20CW\r\n\r\n<!DOCTYPE\x20html><html\x20style=\"height:10
+SF:0%;width:100%\"><head><meta\x20http-equiv=\"Content-Type\"\x20content=\
+SF:"text/html;\x20charset=utf-8\"\x20/><meta\x20http-equiv=\"Server\"\x20c
+SF:ontent=\"CloudWAF\"\x20/><title\x20id=\"title\">\xe6\x9c\xaa\xe6\x89\xb
+SF:e\xe5\x88\xb0</title></head><body\x20style=\"height:100%;width:100%;mar
+SF:gin:0px;font-family:Microsoft\x20yahei\"><div><style\x20type=\"text/css
+SF:\">\t\.button{float:right;margin-right:2rem;text-decoration:none;backgr
+SF:ound:white;color:#e94d4c;padding:\x205px\x2015px\x205px\x2015px;font-si
+SF:ze:1rem;font-family:\x20\xe5\xbe\xae\xe8\xbd\xaf\xe9\x9b\x85\xe9\xbb\x9
+SF:1,\xe5\xae\x8b\xe4\xbd\x93,Arial,Helvetica,Verdana,sans-serif;font-weig
+SF:ht:bold;border-radius:0rem;border:\x20none;-webkit-transition:all\x20li
+SF:near\x200\.30s;-moz-transition:all\x20linear\x200\.30s;}\.button:hover{
+SF:text-decoration:none;background:#e94d4c;color:#f2f2f2;}</style><input\x
+SF:20type=\"button\"")%r(Kerberos,127,"HTTP/1\.1\x20400\x20Bad\x20Request\
+SF:r\nDate:\x20Mon,\x2020\x20Jul\x202026\x2002:53:33\x20GMT\r\nContent-Typ
+SF:e:\x20text/html\r\nContent-Length:\x20153\r\nConnection:\x20close\r\nSe
+SF:rver:\x20CW\r\n\r\n<html>\r\n<head><title>400\x20Bad\x20Request</title>
+SF:</head>\r\n<body>\r\n<center><h1>400\x20Bad\x20Request</h1></center>\r\
+SF:n<hr><center>CloudWAF</center>\r\n</body>\r\n</html>\r\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port443-TCP:V=7.99%T=SSL%I=7%D=7/20%Time=6A5D8DC3%P=i686-pc-windows-win
+SF:dows%r(GetRequest,925,"HTTP/1\.1\x20404\x20Not\x20Found\r\nDate:\x20Mon
+SF:,\x2020\x20Jul\x202026\x2002:53:39\x20GMT\r\nContent-Type:\x20text/html
+SF:\r\nContent-Length:\x202178\r\nConnection:\x20close\r\nETag:\x20\"67925
+SF:7af-882\"\r\nServer:\x20CW\r\n\r\n<!DOCTYPE\x20html><html\x20style=\"he
+SF:ight:100%;width:100%\"><head><meta\x20http-equiv=\"Content-Type\"\x20co
+SF:ntent=\"text/html;\x20charset=utf-8\"\x20/><meta\x20http-equiv=\"Server
+SF:\"\x20content=\"CloudWAF\"\x20/><title\x20id=\"title\">\xe6\x9c\xaa\xe6
+SF:\x89\xbe\xe5\x88\xb0</title></head><body\x20style=\"height:100%;width:1
+SF:00%;margin:0px;font-family:Microsoft\x20yahei\"><div><style\x20type=\"t
+SF:ext/css\">\t\.button{float:right;margin-right:2rem;text-decoration:none
+SF:;background:white;color:#e94d4c;padding:\x205px\x2015px\x205px\x2015px;
+SF:font-size:1rem;font-family:\x20\xe5\xbe\xae\xe8\xbd\xaf\xe9\x9b\x85\xe9
+SF:\xbb\x91,\xe5\xae\x8b\xe4\xbd\x93,Arial,Helvetica,Verdana,sans-serif;fo
+SF:nt-weight:bold;border-radius:0rem;border:\x20none;-webkit-transition:al
+SF:l\x20linear\x200\.30s;-moz-transition:all\x20linear\x200\.30s;}\.button
+SF::hover{text-decoration:none;background:#e94d4c;color:#f2f2f2;}</style><
+SF:input\x20type=\"button\"");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port587-TCP:V=7.99%I=7%D=7/20%Time=6A5D8DC1%P=i686-pc-windows-windows%r
+SF:(Hello,127,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nDate:\x20Mon,\x2020\x
+SF:20Jul\x202026\x2002:53:38\x20GMT\r\nContent-Type:\x20text/html\r\nConte
+SF:nt-Length:\x20153\r\nConnection:\x20close\r\nServer:\x20CW\r\n\r\n<html
+SF:>\r\n<head><title>400\x20Bad\x20Request</title></head>\r\n<body>\r\n<ce
+SF:nter><h1>400\x20Bad\x20Request</h1></center>\r\n<hr><center>CloudWAF</c
+SF:enter>\r\n</body>\r\n</html>\r\n")%r(Help,127,"HTTP/1\.1\x20400\x20Bad\
+SF:x20Request\r\nDate:\x20Mon,\x2020\x20Jul\x202026\x2002:53:38\x20GMT\r\n
+SF:Content-Type:\x20text/html\r\nContent-Length:\x20153\r\nConnection:\x20
+SF:close\r\nServer:\x20CW\r\n\r\n<html>\r\n<head><title>400\x20Bad\x20Requ
+SF:est</title></head>\r\n<body>\r\n<center><h1>400\x20Bad\x20Request</h1><
+SF:/center>\r\n<hr><center>CloudWAF</center>\r\n</body>\r\n</html>\r\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port995-TCP:V=7.99%T=SSL%I=7%D=7/20%Time=6A5D8DC8%P=i686-pc-windows-win
+SF:dows%r(GetRequest,925,"HTTP/1\.1\x20404\x20Not\x20Found\r\nDate:\x20Mon
+SF:,\x2020\x20Jul\x202026\x2002:53:44\x20GMT\r\nContent-Type:\x20text/html
+SF:\r\nContent-Length:\x202178\r\nConnection:\x20close\r\nETag:\x20\"67925
+SF:7af-882\"\r\nServer:\x20CW\r\n\r\n<!DOCTYPE\x20html><html\x20style=\"he
+SF:ight:100%;width:100%\"><head><meta\x20http-equiv=\"Content-Type\"\x20co
+SF:ntent=\"text/html;\x20charset=utf-8\"\x20/><meta\x20http-equiv=\"Server
+SF:\"\x20content=\"CloudWAF\"\x20/><title\x20id=\"title\">\xe6\x9c\xaa\xe6
+SF:\x89\xbe\xe5\x88\xb0</title></head><body\x20style=\"height:100%;width:1
+SF:00%;margin:0px;font-family:Microsoft\x20yahei\"><div><style\x20type=\"t
+SF:ext/css\">\t\.button{float:right;margin-right:2rem;text-decoration:none
+SF:;background:white;color:#e94d4c;padding:\x205px\x2015px\x205px\x2015px;
+SF:font-size:1rem;font-family:\x20\xe5\xbe\xae\xe8\xbd\xaf\xe9\x9b\x85\xe9
+SF:\xbb\x91,\xe5\xae\x8b\xe4\xbd\x93,Arial,Helvetica,Verdana,sans-serif;fo
+SF:nt-weight:bold;border-radius:0rem;border:\x20none;-webkit-transition:al
+SF:l\x20linear\x200\.30s;-moz-transition:all\x20linear\x200\.30s;}\.button
+SF::hover{text-decoration:none;background:#e94d4c;color:#f2f2f2;}</style><
+SF:input\x20type=\"button\"");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port3000-TCP:V=7.99%I=7%D=7/20%Time=6A5D8DC2%P=i686-pc-windows-windows%
+SF:r(GetRequest,925,"HTTP/1\.1\x20404\x20Not\x20Found\r\nDate:\x20Mon,\x20
+SF:20\x20Jul\x202026\x2002:53:38\x20GMT\r\nContent-Type:\x20text/html\r\nC
+SF:ontent-Length:\x202178\r\nConnection:\x20close\r\nETag:\x20\"67925993-8
+SF:82\"\r\nServer:\x20CW\r\n\r\n<!DOCTYPE\x20html><html\x20style=\"height:
+SF:100%;width:100%\"><head><meta\x20http-equiv=\"Content-Type\"\x20content
+SF:=\"text/html;\x20charset=utf-8\"\x20/><meta\x20http-equiv=\"Server\"\x2
+SF:0content=\"CloudWAF\"\x20/><title\x20id=\"title\">\xe6\x9c\xaa\xe6\x89\
+SF:xbe\xe5\x88\xb0</title></head><body\x20style=\"height:100%;width:100%;m
+SF:argin:0px;font-family:Microsoft\x20yahei\"><div><style\x20type=\"text/c
+SF:ss\">\t\.button{float:right;margin-right:2rem;text-decoration:none;back
+SF:ground:white;color:#e94d4c;padding:\x205px\x2015px\x205px\x2015px;font-
+SF:size:1rem;font-family:\x20\xe5\xbe\xae\xe8\xbd\xaf\xe9\x9b\x85\xe9\xbb\
+SF:x91,\xe5\xae\x8b\xe4\xbd\x93,Arial,Helvetica,Verdana,sans-serif;font-we
+SF:ight:bold;border-radius:0rem;border:\x20none;-webkit-transition:all\x20
+SF:linear\x200\.30s;-moz-transition:all\x20linear\x200\.30s;}\.button:hove
+SF:r{text-decoration:none;background:#e94d4c;color:#f2f2f2;}</style><input
+SF:\x20type=\"button\"")%r(Help,127,"HTTP/1\.1\x20400\x20Bad\x20Request\r\
+SF:nDate:\x20Mon,\x2020\x20Jul\x202026\x2002:53:38\x20GMT\r\nContent-Type:
+SF:\x20text/html\r\nContent-Length:\x20153\r\nConnection:\x20close\r\nServ
+SF:er:\x20CW\r\n\r\n<html>\r\n<head><title>400\x20Bad\x20Request</title></
+SF:head>\r\n<body>\r\n<center><h1>400\x20Bad\x20Request</h1></center>\r\n<
+SF:hr><center>CloudWAF</center>\r\n</body>\r\n</html>\r\n")%r(NCP,127,"HTT
+SF:P/1\.1\x20400\x20Bad\x20Request\r\nDate:\x20Mon,\x2020\x20Jul\x202026\x
+SF:2002:53:38\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x201
+SF:53\r\nConnection:\x20close\r\nServer:\x20CW\r\n\r\n<html>\r\n<head><tit
+SF:le>400\x20Bad\x20Request</title></head>\r\n<body>\r\n<center><h1>400\x2
+SF:0Bad\x20Request</h1></center>\r\n<hr><center>CloudWAF</center>\r\n</bod
+SF:y>\r\n</html>\r\n")%r(HTTPOptions,925,"HTTP/1\.1\x20404\x20Not\x20Found
+SF:\r\nDate:\x20Mon,\x2020\x20Jul\x202026\x2002:53:38\x20GMT\r\nContent-Ty
+SF:pe:\x20text/html\r\nContent-Length:\x202178\r\nConnection:\x20close\r\n
+SF:ETag:\x20\"679257af-882\"\r\nServer:\x20CW\r\n\r\n<!DOCTYPE\x20html><ht
+SF:ml\x20style=\"height:100%;width:100%\"><head><meta\x20http-equiv=\"Cont
+SF:ent-Type\"\x20content=\"text/html;\x20charset=utf-8\"\x20/><meta\x20htt
+SF:p-equiv=\"Server\"\x20content=\"CloudWAF\"\x20/><title\x20id=\"title\">
+SF:\xe6\x9c\xaa\xe6\x89\xbe\xe5\x88\xb0</title></head><body\x20style=\"hei
+SF:ght:100%;width:100%;margin:0px;font-family:Microsoft\x20yahei\"><div><s
+SF:tyle\x20type=\"text/css\">\t\.button{float:right;margin-right:2rem;text
+SF:-decoration:none;background:white;color:#e94d4c;padding:\x205px\x2015px
+SF:\x205px\x2015px;font-size:1rem;font-family:\x20\xe5\xbe\xae\xe8\xbd\xaf
+SF:\xe9\x9b\x85\xe9\xbb\x91,\xe5\xae\x8b\xe4\xbd\x93,Arial,Helvetica,Verda
+SF:na,sans-serif;font-weight:bold;border-radius:0rem;border:\x20none;-webk
+SF:it-transition:all\x20linear\x200\.30s;-moz-transition:all\x20linear\x20
+SF:0\.30s;}\.button:hover{text-decoration:none;background:#e94d4c;color:#f
+SF:2f2f2;}</style><input\x20type=\"button\"");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port3128-TCP:V=7.99%I=7%D=7/20%Time=6A5D8DC2%P=i686-pc-windows-windows%
+SF:r(GetRequest,925,"HTTP/1\.1\x20404\x20Not\x20Found\r\nDate:\x20Mon,\x20
+SF:20\x20Jul\x202026\x2002:53:38\x20GMT\r\nContent-Type:\x20text/html\r\nC
+SF:ontent-Length:\x202178\r\nConnection:\x20close\r\nETag:\x20\"679257af-8
+SF:82\"\r\nServer:\x20CW\r\n\r\n<!DOCTYPE\x20html><html\x20style=\"height:
+SF:100%;width:100%\"><head><meta\x20http-equiv=\"Content-Type\"\x20content
+SF:=\"text/html;\x20charset=utf-8\"\x20/><meta\x20http-equiv=\"Server\"\x2
+SF:0content=\"CloudWAF\"\x20/><title\x20id=\"title\">\xe6\x9c\xaa\xe6\x89\
+SF:xbe\xe5\x88\xb0</title></head><body\x20style=\"height:100%;width:100%;m
+SF:argin:0px;font-family:Microsoft\x20yahei\"><div><style\x20type=\"text/c
+SF:ss\">\t\.button{float:right;margin-right:2rem;text-decoration:none;back
+SF:ground:white;color:#e94d4c;padding:\x205px\x2015px\x205px\x2015px;font-
+SF:size:1rem;font-family:\x20\xe5\xbe\xae\xe8\xbd\xaf\xe9\x9b\x85\xe9\xbb\
+SF:x91,\xe5\xae\x8b\xe4\xbd\x93,Arial,Helvetica,Verdana,sans-serif;font-we
+SF:ight:bold;border-radius:0rem;border:\x20none;-webkit-transition:all\x20
+SF:linear\x200\.30s;-moz-transition:all\x20linear\x200\.30s;}\.button:hove
+SF:r{text-decoration:none;background:#e94d4c;color:#f2f2f2;}</style><input
+SF:\x20type=\"button\"");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port6001-TCP:V=7.99%I=7%D=7/20%Time=6A5D8DBD%P=i686-pc-windows-windows%
+SF:r(X11Probe,127,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nDate:\x20Mon,\x20
+SF:20\x20Jul\x202026\x2002:53:33\x20GMT\r\nContent-Type:\x20text/html\r\nC
+SF:ontent-Length:\x20153\r\nConnection:\x20close\r\nServer:\x20CW\r\n\r\n<
+SF:html>\r\n<head><title>400\x20Bad\x20Request</title></head>\r\n<body>\r\
+SF:n<center><h1>400\x20Bad\x20Request</h1></center>\r\n<hr><center>CloudWA
+SF:F</center>\r\n</body>\r\n</html>\r\n");
+Device type: media device|WAP|general purpose|switch|storage-misc
+Running (JUST GUESSING): Zgemma embedded (93%), Linux 4.X|2.4.X|2.6.X|3.X (93%), Netgear embedded (91%), QNAP embedded (91%)
+OS CPE: cpe:/o:linux:linux_kernel:4.4 cpe:/o:linux:linux_kernel:2.4 cpe:/o:linux:linux_kernel:2.6.22 cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4 cpe:/o:linux:linux_kernel:3.18.24 cpe:/o:linux:linux_kernel:4.14
+Aggressive OS guesses: Zgemma H9 TV receiver (Linux 4.4) (93%), OpenWrt 0.9 - 7.09 (Linux 2.4.30 - 2.4.34) (92%), OpenWrt White Russian 0.9 (Linux 2.4.30) (92%), OpenWrt Kamikaze 7.09 (Linux 2.6.22) (92%), Linux 3.12 - 4.10 (91%), Linux 3.16 (91%), Netgear GS108Tv3, GS110Tv3, or GS308T switch (Linux 3.18.24) (91%), QNAP NAS device (Linux 4.14) (91%), Linux 3.18 (90%), HP P2000 G3 NAS device (90%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 11 hops
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Jul 20 09:54:17 2026 -- 1 IP address (1 host up) scanned in 41.26 seconds

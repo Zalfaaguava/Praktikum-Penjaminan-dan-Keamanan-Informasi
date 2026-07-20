@@ -1,0 +1,11 @@
+# Nmap 7.99 scan initiated Mon Jul 20 09:55:18 2026 as: nmap -sV -O -p 3020 -oN kemenag_version.txt www.kemenag.go.id
+Nmap scan report for www.kemenag.go.id (103.7.13.243)
+Host is up (0.051s latency).
+Other addresses for www.kemenag.go.id (not scanned): 64:ff9b::6707:df3
+
+PORT     STATE    SERVICE VERSION
+3020/tcp filtered cifs
+Too many fingerprints match this host to give specific OS details
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Jul 20 09:55:27 2026 -- 1 IP address (1 host up) scanned in 8.61 seconds
